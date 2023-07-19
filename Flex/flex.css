@@ -1,0 +1,24 @@
+.mainbox{
+    border: 3px outset lime;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: row;
+   
+
+}
+
+.box{
+    width: 5rem;
+    height: 5rem;
+    background: yellowgreen;
+    margin: 1rem;
+  
+}
+.one{
+    flex-basis: 10rem; 
+    flex-grow: 0; 
+    flex-shrink:1;
+}
+
