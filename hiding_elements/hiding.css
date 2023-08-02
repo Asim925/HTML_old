@@ -1,0 +1,17 @@
+.mainContainer {
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.mainContainer > div {
+    height: 100px;
+    width: 50%;
+}
+
+.first{
+    background-color: aqua;
+}
+
+.second{
+    background-color: green
+}

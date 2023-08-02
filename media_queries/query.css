@@ -1,0 +1,39 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.boxone{
+    background-color: chartreuse;
+    padding: 1rem;
+
+}
+
+.boxtwo{
+    padding: 1rem;
+    background-color: crimson;
+}
+
+@media screen and (min-width: 600px)  {
+    .container{
+        display: flex;
+        flex-direction: row;
+       
+    }
+    .boxone{
+    background-color: chartreuse;
+        
+    }
+}
+
+@media screen and (min-width: 900px)  {
+    .container{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .boxone{
+        background-color: black;
+    }
+}
