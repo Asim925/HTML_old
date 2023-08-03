@@ -4,13 +4,12 @@ body{
 .container{
     display: grid;
     border: 4px solid grey;
-    grid-template: 100px 140px/  30fr 70fr ;
+    grid-template: 100px 140px 120px/  30fr 70fr ;
     grid-template-areas:
      "header header"
      "sidebar main"
-     "footer footer"       
-    ;
-
+     "footer footer"
+     "copyright copyright";
     height: 100vh;
     gap: 11px;
     background-color: black;
@@ -19,7 +18,7 @@ body{
 .box{
     background-color: white ; 
     text-align:center;
-
+    
 }
 
 .box-aik{
@@ -29,5 +28,11 @@ body{
 
 .box-char{
     grid-area: footer;
-    height: 120px;    
+  
+}
+
+.box5{
+    height: 40px;
+    grid-area: copyright;
+    
 }
