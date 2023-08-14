@@ -1,0 +1,28 @@
+/* //////////......fonts....../////////// */
+
+@font-face {
+  font-family: "opensans-regular";
+  src: url("fonts/open-sans/opensans-regular-webfont.woff2") format("woff2"),
+    url("fonts/open-sans/opensans-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "opensans-bold";
+  src: url("fonts/open-sans/opensans-bold-webfont.woff2") format("woff2"),
+    url("fonts/open-sans/opensans-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+/* //////.......Main-Styles......./////// */
+
+body {
+  font-size: medium;
+  font-family: "opensans-regular";
+  font-weight: 500;
+  font-style: italic;
+  color: darkgoldenrod;
+  font-display: optional;
+  /* ///cache se load hoga Font optional main next page pr/// */
+}
