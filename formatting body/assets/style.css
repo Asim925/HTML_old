@@ -1,0 +1,40 @@
+/* //////////......fonts....../////////// */
+
+@font-face {
+  font-family: "opensans-regular";
+  src: url("./fonts/open-sans/opensans-regular-webfont.woff2") format("woff2"),
+    url("./fonts/open-sans/opensans-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "opensans-bold";
+  src: url("./fonts/open-sans/opensans-bold-webfont.woff2") format("woff2"),
+    url("./fonts/open-sans/opensans-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+/* //////.......Main-Styles......./////// */
+
+.first{
+  font-family: "opensans-bold";
+ 
+  text-decoration: underline;
+  font-style: italic;
+  color: darkorange;
+}
+
+.second{
+  /* width: 50%; */
+  text-shadow: 1px 1px 5px lightcoral;
+  word-wrap: nowrap;
+
+  overflow: visible;
+}
+
+div{
+  width: 50%;
+  column-count: 2;
+  margin-top: 50px;
+}
