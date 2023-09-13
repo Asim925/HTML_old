@@ -28,7 +28,7 @@
 .second{
   /* width: 50%; */
   text-shadow: 1px 1px 5px lightcoral;
-  word-wrap: nowrap;
+  white-space: nowrap;
 
   overflow: visible;
 }
