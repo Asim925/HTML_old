@@ -7,20 +7,26 @@
     <title>basic form</title>
   </head>
   <body>
-    <form>
-      <!-- 1 field -->
+    <div class="body">
+      <form>
+        <!-- 1 field -->
 
-      <!-- yahan type pehli batate hain or phir hum jab text ko click 
+        <!-- yahan type pehli batate hain or phir hum jab text ko click 
         krne pr field ka cursor kholna chahte hain to us ke liye hamain
          input ko label ke sath link karna hoga yani ke id or for main same
           cheez rakhni hai or phir label main nam dena hai then done!! -->
-      <label for="name">Name</label>
-      <input id="name" type="text" />
-      <!-- 2 field -->
-      <div>
-        <label for="email">email</label>
-        <input id="email" type="email" />
-      </div>
-    </form>
+        <div class="formGroup">
+          <label for="name">Name</label>
+          <input id="name" type="text" />
+        </div>
+        <!-- 2 field -->
+        <div class="formGroup">
+          <label for="email">email</label>
+          <input id="email" type="email" />
+        </div>
+        <button type="reset">clear</button>
+        <button type="sumbit">ok</button>
+      </form>
+    </div>
   </body>
 </html>
