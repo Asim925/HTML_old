@@ -22,13 +22,24 @@
           <label for="name">Name</label>
           <!-- value dene se value pehle se hi likhi mile gi -->
           <!-- autofocus se restart pr pehle se box select hoga -->
-          <!-- maxlegnth se 10  characters se ziada nahi asakte -->
-          <input id="name" value="M.Asim" type="text" autofocus maxlength="10" />
+          <!-- maxlegnth se {X};ex:10 characters se ziada nahi asakte -->
+          <input
+            id="name"
+            value="M.Asim"
+            type="text"
+            autofocus
+            maxlength="10"
+          />
         </div>
         <div>
           <label for="email">Email</label>
           <!-- ""place-holder se hamre pas text sirf aik background ke tor pr aye ga likha hoa na ke actual main value ki tarhan"" -->
-          <input id="email" type="email" disabled value="ye box ham select nahi kr sakte or value bhi change ni hogi due to disabled" />
+          <input
+            id="email"
+            type="email"
+            disabled
+            value="ye box ham select nahi kr sakte or value bhi change ni hogi due to disabled"
+          />
         </div>
         <div>
           <label for="number">number</label>
@@ -36,12 +47,28 @@
         </div>
         <div>
           <label for="text">text</label>
-          <input id="text" type="text" readonly value=" is box ko khali select kr sakte hain change ni kar sakte"/>
+          <input
+            id="text"
+            type="text"
+            readonly
+            value=" is box ko khali select kr sakte hain change ni kar sakte"
+          />
         </div>
 
         <!-- text area -->
         <!-- //abhi ye resize hoskata ha likin agr none kr den resize to ni hoga kullu khallass -->
-        <textarea cols="30" rows="10">ye wala text pehle se likha mile ga yani value given</textarea>
+        <textarea cols="30" rows="10">
+ye wala text pehle se likha mile ga yani value given</textarea
+        >
+
+        <div>
+          <input list="countries" type="text" />
+          <datalist id="countries" autocomplete="off">
+            <option data-value="1">Pakistan</option>
+            <option>India</option>
+            <option>SaudiArab</option>
+          </datalist>
+        </div>
 
         <!-- buttons -->
         <button type="sumbit">ok</button>
