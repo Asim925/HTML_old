@@ -13,7 +13,8 @@
   </head>
   <body>
     <div class="body">
-      <form>
+      <!-- ye link lana hai form spree se password is !Hello1world -->
+      <form action="https://formspree.io/f/xbjvpbyp" method="get">
         <!-- yahan type pehli batate hain or phir hum jab text ko click 
         krne pr field ka cursor kholna chahte hain to us ke liye hamain
          input ko label ke sath link karna hoga yani ke id or for main same
@@ -36,14 +37,14 @@
           <!-- ""place-holder se hamre pas text sirf aik background ke tor pr aye ga likha hoa na ke actual main value ki tarhan"" -->
           <input
             id="email"
+            required
             type="email"
-            disabled
             value="ye box ham select nahi kr sakte or value bhi change ni hogi due to disabled"
           />
         </div>
         <div>
           <label for="number">number</label>
-          <input id="number" type="number" placeholder="Number" />
+          <input id="number" type="number" placeholder="Number" min="0"  max="5"/>
         </div>
         <div>
           <label for="text">text</label>
@@ -62,7 +63,13 @@ ye wala text pehle se likha mile ga yani value given</textarea
         >
 
         <div>
-          <input list="countries" type="text" />
+          <input
+            list="countries"
+            type="text"
+            required
+            minlength="4"
+            maxlength="6"
+          />
           <datalist id="countries" autocomplete="off">
             <option data-value="1">Pakistan</option>
             <option>India</option>
@@ -96,7 +103,32 @@ ye wala text pehle se likha mile ga yani value given</textarea
           <input type="radio" name="color" id="blue" />
           <label class="label-inline" for="blue">blue</label>
         </div>
+
+        <div><input type="range" min="0" max="10" /></div>
+
+        <!-- ////accept is used to open only X{extension ; .jpg or else} file -->
+        <div><input type="file" multiple accept=".jpg , .png" /></div>
+
+        <section>
+          <h2>BIO</h2>
+          <input type="text" />
+          <input type="text" />
+          <input type="text" />
+          <input type="text" />
+
+          <h2>BIO</h2>
+          <input type="text" />
+          <input type="text" />
+          <input type="text" />
+          <input type="text" />
+        </section>
+        <!-- hidden type is used to make the input field hidden -->
+        <div><input type="hidden" value="9999" name="anything" /></div>
+
+        <div><input type="date" required minlength="1" maxlength="3"/></div>
+
         <!-- buttons -->
+
         <button type="sumbit">ok</button>
         <button type="reset">clear</button>
       </form>
