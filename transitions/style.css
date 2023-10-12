@@ -1,0 +1,17 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div {
+  height: 100px;
+  width: 100px;
+  background-color: burlywood;
+  transform: rotate(45deg);
+}
+
+div:hover{
+    transform: skew(10deg) translate(10px) ;
+    transform-origin: 0 50%;
+}
