@@ -4,14 +4,33 @@ body {
   justify-content: center;
   align-items: center;
 }
-div {
-  height: 100px;
-  width: 100px;
-  background-color: burlywood;
-  transform: rotate(45deg);
+
+@keyframes design {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: rotate(45deg) scale(1.5);
+    background: red;
+  }
+  50%{
+    transform: rotate(0) translate(5);
+    color: white;
+  }
+  75%{
+    transform: scale(0.5);
+    background-color: pink;
+  }
+  95%{
+    transform: rotate(-10deg);
+  }
 }
 
-div:hover{
-    transform: skew(10deg) translate(10px) ;
-    transform-origin: 0 50%;
+.one {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  animation-name: design;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
 }
